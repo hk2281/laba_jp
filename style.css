@@ -1,0 +1,564 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url(fonts/OpenSans-Regular.ttf) format(ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(fonts/OpenSans-Italic.ttf) format(ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(fonts/OpenSans-Bold.ttf) format(ttf);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------- Nav Bar ---------- */
+header nav {
+    background-color: #655d5b;
+    padding: 15px;
+    padding-right: 100px;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    width: 800px;
+    list-style: none;
+}
+.nav-list li {
+    cursor: pointer;
+    transition: all 500ms;
+    border-radius: 5px;
+}
+.nav-list li:hover {
+    background-color: #2A1D17;
+}
+
+.nav-list a {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFDFD;
+    padding: 15px 15px;
+    text-align: center;
+}
+.call-button {
+    margin-left: 20px;
+    padding: 0 50px;
+}
+
+/* ---------- Slider ---------- */
+.screen {
+    height: 600px;
+    background-color: #E0E0E0;
+}
+  
+  /* General styles */
+  .sim-slider {
+    position: relative;
+  }
+  
+  .sim-slider-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .sim-slider-element {
+    width: 100%;
+    transition: opacity 1s ease-in;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+  
+  /* Navigation item styles */
+  div.sim-slider-arrow-left,
+  div.sim-slider-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+  }
+  
+  /* TODO: change link to arrow icons */
+  div.sim-slider-arrow-left {
+    left: 10px;
+    top: 40%;
+    display: block;
+    filter: invert();
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-right {
+    right: 10px;
+    top: 40%;
+    display: block;
+    filter: invert();
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-left:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-arrow-right:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-dots {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    text-align: center;
+  }
+  
+  span.sim-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    padding: 0;
+    display: inline-block;
+    background-color: rgba(138, 138, 138, 0.8);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+/* ---------- Heading page ---------- */
+main {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+.main-heading {
+    background-image: url('img/carousel/slide1.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: #FFFDFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.secondary-heading {
+    background-image: url('img/carousel/slide2.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: #FFFDFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.main-heading-text {
+    height: 240px;
+    width: 900px;
+    text-align: left; 
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+}
+.main-heading-text h1 {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 85px;
+    margin-bottom: 25px
+}
+.main-heading-text h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.cards-wrapper {
+    width: 90%; 
+    margin: 0 auto;
+}
+.card-heading-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 30px;
+    color: #FFFDFD;
+    margin-bottom: 20px;
+}
+.card-desc-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+.card {
+    display: flex;
+    width: 100%;
+    height: 570px;
+}
+.card-img {
+    width: 500px;
+    height: 570px;
+}
+.card-desc-block {
+    width: 100%;
+    display:flex;
+    background: #DEAE83;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.desc-content {
+    padding-left: 110px;
+    padding-top: 55px;
+    padding-bottom: 30px;
+    /* for aligning features block to the bottom */
+    position:relative;
+}
+
+.desc-content-text {
+    width: 350px;
+}
+
+.features {
+    display: flex;
+    /* TODO: is there another variant to align 
+    features block to the bottom ? */
+    position: absolute;
+    bottom: 30px;
+}
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FEFEFF;
+
+    text-align: center;
+    border: 2px solid #FEFEFF;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 40px;
+}
+
+.interior-doors-img {
+    width: 620px;
+    height: 570px;
+}
+
+/* ---------- Reviews ---------- */
+.reviews {
+    margin-top: 70px;
+    padding-top: 55px;
+    padding-bottom: 47px;
+    background-color: #FEFEFF;
+    color: black;
+    text-align: center;
+}
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 5px auto;
+}
+.reviews h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 27px;
+    margin-bottom: 31px;
+}
+.reviews-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.reviewer-card {
+    display: flex; 
+    flex-direction: column;
+}
+.reviewer-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+}
+.review {
+    text-align: left;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+
+    width: 200px;
+    height: 230px;
+
+    margin-top: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 2px solid rgba(153, 152, 152, 0.4);
+    border-bottom: 2px solid rgba(153, 152, 152, 0.4);
+}
+
+/* ---------- Contact us ---------- */
+.contact-form {
+    margin-top: 100px;
+    background-color: #FEFEFF;
+    text-align: center;
+    
+    display: flex;
+
+}
+.map {
+    width: 620px;
+    height: 580px;
+}
+.form-wrapper{
+    width: calc(100% - 620px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-wrapper h1 {
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 27px;
+}
+.form-inputs {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    
+}
+.form-inputs input {
+    margin-bottom: 25px;
+    
+    height: 35px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+
+    border: 1px solid #CBCACA;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+    padding: 0 15px;
+
+    outline: none;
+    transition: all 100ms;
+
+}
+
+.form-inputs input:focus {
+    border: 2px solid #1A7BEE;
+    border-radius: 2px; 
+}
+.tel-number {
+    display: flex;
+}
+.tel-number-beginning {
+    padding-top: 4px;
+    padding-right: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 27px;
+    color: #000000;
+}
+.number-prefix {
+    padding: 0 5px;
+    margin-right: 10px;
+    width: 48px;
+}
+.tel-number input:last-of-type {
+    width: 100%;
+}
+.form-inputs input:last-of-type{
+    margin-bottom: 0px;
+}
+
+.time-input-help {
+    padding-top: 3px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+input[type=submit] {
+    margin-top: 25px;
+    width: 200px;
+    height: 40px;
+    background: #2A1D17;
+    color: #FFFEFE;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 260px;
+    background-color: #464547;
+    box-sizing: border-box;
+    padding: 45px 163px 45px 100px;
+    
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 70px;
+}
+footer p{
+    color: #FFFBFB;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+footer a {
+    color: #FFFBFB;
+}
+
+/* Как задать фиксированный размер ячейке грида */
+.info-cards {
+    display: grid;
+    width: 430px;
+    height: 170px;
+    grid-template-columns: auto auto;
+}
+.info-column {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: space-between;
+}
+.info-column .info-card:last-child {
+    justify-content: flex-end;
+}
+.info-column .info-card:first-child {
+    justify-content: flex-start;
+}
+.info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.links {
+    padding-top: 60px;
+    width: 150px;
+    display: grid; 
+    grid-template-rows: auto auto;
+}
+.social p {
+    margin-bottom: 4px;
+}
+.icons {
+    display: flex; 
+    justify-content: flex-start;
+}
+.icons a:hover {
+    opacity: 0.6;
+}
+.icons img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
+}
+.partners p {
+    margin-bottom: 15px;
+}
+.partner-pics {
+    display: grid; 
+    grid-template-columns: auto auto auto; 
+    grid-template-rows: auto auto; 
+    gap: 25px 30px; 
+    grid-template-areas: 
+      ". . lesok"
+      ". . lesok"; 
+}
+.lesok {
+    grid-area: lesok;
+}
+
+.partner-pics img {
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+}
+.partner-pics img:last-child {
+    width: 137px;
+    height: 126px;
+}
+
+/* On Top button */
+.on-top {
+    position: fixed; 
+    right: 10px;
+    bottom: 20px;
+   
+    border-radius: 20%;
+    border-color: none;
+    background-color: #303134;
+    transition: all 300ms;
+    z-index: 10;
+    padding: 20px 20px 16px 20px;
+}
+.on-top img {
+    filter: invert();
+    width: 25px;
+    height: 25px;
+}
+.on-top:hover {
+    background-color: #5e6169;
+    
+    /* Странно работает в связке с transition */
+    /* opacity: 0.7; */
+    /* filter: brightness(1.5); */
+}
+
+@media screen and (min-width : 1440px) {
+    .container {
+        width: 1440px;
+    }
+}
