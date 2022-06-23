@@ -479,7 +479,7 @@ footer a {
 
 
 .links {
-    padding-top: 60px;
+    padding-top: 10px;
     width: 150px;
     display: grid; 
     grid-template-rows: auto auto;
