@@ -161,7 +161,7 @@ main {
     flex-direction: column; 
     width: 100%;
 }
-.main-heading {
+.mh {
     background-image: url('img/carousel/slide1.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,7 +172,7 @@ main {
     justify-content: center;
     margin-bottom: 70px;
 }
-.secondary-heading {
+.sh {
     background-image: url('img/carousel/slide2.png'); 
     background-repeat: no-repeat;
     background-size: cover;
@@ -184,7 +184,7 @@ main {
     margin-bottom: 70px;
 }
 
-.main-heading-text {
+.mh-text {
     height: 240px;
     width: 900px;
     text-align: left; 
@@ -192,29 +192,29 @@ main {
     border-radius: 15px;
     padding: 15px;
 }
-.main-heading-text h1 {
+.mh-text h1 {
     font-weight: 700;
     font-size: 96px;
     line-height: 85px;
     margin-bottom: 25px
 }
-.main-heading-text h2 {
+.mh-text h2 {
     font-weight: 700;
     font-size: 30px;
 }
 
-.cards-wrapper {
+.cd_wp {
     width: 90%; 
     margin: 0 auto;
 }
-.card-heading-text {
+.cd_h_t {
     font-weight: 700;
     font-size: 36px;
     line-height: 30px;
     color: #FFFDFD;
     margin-bottom: 20px;
 }
-.card-desc-text {
+.cdt {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -228,7 +228,7 @@ main {
     width: 500px;
     height: 570px;
 }
-.card-desc-block {
+.cd_dsk_bl {
     width: 100%;
     display:flex;
     background: #DEAE83;
@@ -283,7 +283,7 @@ main {
     color: black;
     text-align: center;
 }
-.photo {
+.pht {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -303,16 +303,16 @@ main {
     margin: 0 auto;
 }
 
-.reviewer-card {
+.com_cd {
     display: flex; 
     flex-direction: column;
 }
-.reviewer-name {
+.com_nm {
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
 }
-.review {
+.cms {
     text-align: left;
     font-weight: 400;
     font-size: 15px;
@@ -328,7 +328,7 @@ main {
     border-bottom: 2px solid rgba(153, 152, 152, 0.4);
 }
 
-/* ---------- Contact us ---------- */
+/* ---------- Contact ---------- */
 .contact-form {
     margin-top: 100px;
     background-color: #FEFEFF;
@@ -337,7 +337,7 @@ main {
     display: flex;
 
 }
-.map {
+.google_map {
     width: 620px;
     height: 580px;
 }
@@ -354,14 +354,14 @@ main {
     font-size: 36px;
     line-height: 27px;
 }
-.form-inputs {
+.f_in {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     width: 340px;
     
 }
-.form-inputs input {
+.f_in input {
     margin-bottom: 25px;
     
     height: 35px;
@@ -380,14 +380,14 @@ main {
 
 }
 
-.form-inputs input:focus {
+.f_in input:focus {
     border: 2px solid #1A7BEE;
     border-radius: 2px; 
 }
-.tel-number {
+.tl-n {
     display: flex;
 }
-.tel-number-beginning {
+.tl-n-beginning {
     padding-top: 4px;
     padding-right: 10px;
     font-weight: 700;
@@ -395,15 +395,15 @@ main {
     line-height: 27px;
     color: #000000;
 }
-.number-prefix {
+.nm_p {
     padding: 0 5px;
     margin-right: 10px;
     width: 48px;
 }
-.tel-number input:last-of-type {
+.tl-n input:last-of-type {
     width: 100%;
 }
-.form-inputs input:last-of-type{
+.f_in input:last-of-type{
     margin-bottom: 0px;
 }
 
@@ -497,33 +497,33 @@ footer a {
     margin-right: 10px;
 }
 
-.partners {
+.ptrs {
     display: flex;
     flex-direction: column;
     justify-items: end;
 }
-.partners p {
+.ptrs p {
     margin-bottom: 15px;
 }
-.partner-pics {
+.ptr_pc {
     display: grid; 
     grid-template-columns: auto auto auto; 
     grid-template-rows: auto auto; 
     gap: 25px 30px; 
     grid-template-areas: 
-      ". . lesok"
-      ". . lesok"; 
+      ". . forest"
+      ". . forest"; 
 }
-.lesok {
-    grid-area: lesok;
+.forest {
+    grid-area: forest;
 }
 
-.partner-pics img {
+.ptr_pc img {
     width: 150px;
     height: 50px;
     object-fit: cover;
 }
-.partner-pics img:last-child {
+.ptr_pc img:last-child {
     width: 137px;
     height: 126px;
 }
