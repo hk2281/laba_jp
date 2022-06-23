@@ -107,7 +107,7 @@ header nav {
     z-index: 4;
   }
   
-  /* TODO: change link to arrow icons */
+
   div.sim-slider-arrow-left {
     left: 10px;
     top: 40%;
@@ -239,7 +239,6 @@ main {
     padding-left: 110px;
     padding-top: 55px;
     padding-bottom: 30px;
-    /* for aligning features block to the bottom */
     position:relative;
 }
 
@@ -249,12 +248,10 @@ main {
 
 .features {
     display: flex;
-    /* TODO: is there another variant to align 
-    features block to the bottom ? */
     position: absolute;
     bottom: 30px;
 }
-.circle {
+.crl {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -277,8 +274,8 @@ main {
     height: 570px;
 }
 
-/* ---------- Reviews ---------- */
-.reviews {
+/* ---------- comenters ---------- */
+.comenters {
     margin-top: 70px;
     padding-top: 55px;
     padding-bottom: 47px;
@@ -293,13 +290,13 @@ main {
     object-fit: cover;
     margin: 5px auto;
 }
-.reviews h1 {
+.comenters h1 {
     font-weight: 700;
     font-size: 36px;
     line-height: 27px;
     margin-bottom: 31px;
 }
-.reviews-content {
+.rvc {
     width: 80%;
     display: flex;
     justify-content: space-between;
