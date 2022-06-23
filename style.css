@@ -1,16 +1,16 @@
 @font-face {
-    font-family: 'OpenSans';
-    src: url(fonts/OpenSans-Regular.ttf) format(ttf);
+    font-family: 'RobotoMono';
+    src: url(fonts/RobotoMono-Regular.ttf) format(ttf);
     font-weight: 400;
 }
 @font-face {
-    font-family: 'OpenSans';
-    src: url(fonts/OpenSans-Italic.ttf) format(ttf);
+    font-family: 'RobotoMono';
+    src: url(fonts/RobotoMono-Italic.ttf) format(ttf);
     font-weight: 400;
 }
 @font-face {
-    font-family: 'OpenSans';
-    src: url(fonts/OpenSans-Bold.ttf) format(ttf);
+    font-family: 'RobotoMono';
+    src: url(fonts/RobotoMono-Bold.ttf) format(ttf);
     font-weight: 700;
 }
 
@@ -23,7 +23,7 @@ a {
     text-decoration: none;
 }
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #E0E0E0;
     display: flex;
     flex-direction: column;
@@ -37,23 +37,23 @@ header nav {
     padding: 15px;
     padding-right: 100px;
 }
-.nav-list {
+.list-for-navigator {
     display: flex;
     justify-content: space-between;
     margin-left: auto;
     width: 800px;
     list-style: none;
 }
-.nav-list li {
+.list-for-navigator li {
     cursor: pointer;
     transition: all 500ms;
     border-radius: 5px;
 }
-.nav-list li:hover {
+.list-for-navigator li:hover {
     background-color: #2A1D17;
 }
 
-.nav-list a {
+.list-for-navigator a {
     display: block;
     font-weight: 400;
     font-size: 13px;
@@ -539,15 +539,15 @@ footer a {
    
     border-radius: 20%;
     border-color: none;
-    background-color: #303134;
+    /* background-color: #303134; */
     transition: all 300ms;
     z-index: 10;
     padding: 20px 20px 16px 20px;
 }
 .on-top img {
-    filter: invert();
-    width: 25px;
-    height: 25px;
+    /* filter: invert(); */
+    width: 75px;
+    height: 75px;
 }
 .on-top:hover {
     background-color: #5e6169;
